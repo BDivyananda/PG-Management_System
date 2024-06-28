@@ -1,0 +1,40 @@
+<!-- <app-search></app-search> -->
+<app-navbar></app-navbar>
+<app-header></app-header>
+
+<app-not-found [visible]="!books || books.length <=0"></app-not-found>
+<!-- <app-login></app-login> -->
+<app-tags></app-tags><br><br>
+<ul>
+    <li *ngFor="let book of books">
+        <a routerLink="/book/{{book.id}}">
+        <img src="{{book.imageUrl}}" alt="PG Images">
+        <div class="content">
+            <div class="name">
+                {{book.name}}
+            </div>
+            <span class="favorite {{book.favorite?'':'not'}}"></span>
+            <!-- <star-rating 
+            [value]="PG.star"
+            [totalstars]="5"
+            checkedcolor="red"
+            uncheckedcolor="black"
+            size="24px"
+            [readonly]="false"></star-rating> -->
+            <div class="product-item-book">
+                <div class="Owners">
+                    <span *ngFor="let Owner of book.Owner">
+                        {{Owner}}
+                    </span>
+                </div>
+                <div class="price">
+                    {{book.price|currency:'INR'}}
+                </div>
+        </div>
+        </div>
+    </a>
+    </li>
+</ul>
+<app-footer></app-footer>
+
+

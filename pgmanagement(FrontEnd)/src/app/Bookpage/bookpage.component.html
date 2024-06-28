@@ -1,0 +1,35 @@
+<app-not-found [visible]="!book" notFoundMessage="Product Not Found !" 
+resetLinkText="Goto HomePage"></app-not-found>
+
+<div *ngIf="book" class="container">
+    <img [src]="book.imageUrl" [alt]="book.name">
+
+<div class="details">
+    <div class="header">
+        <span class="name">{{book.name}}</span>
+
+        <span class="favorite {{book.favorite?'':'not'}}">❤️</span>
+    </div> 
+    
+    
+    <div class="Owners">Owner:
+        <span *ngFor="let Owner of book.Owner">
+            {{Owner}}
+        </span>
+    </div>
+    <div class="tag">
+        <app-tags [bookPageTags]="book.tags" justifyContent="star-rating"></app-tags>
+    </div>
+    <div class="Address">
+        <span>
+            Address :<strong>{{book.Address}}</strong>
+        </span>
+    </div>
+
+    <div class="price">
+        <span>{{book.price|currency:'INR'}}</span>
+    </div>
+
+        <button (click)="addToCart()">Book Your PG</button>
+   </div>
+</div>

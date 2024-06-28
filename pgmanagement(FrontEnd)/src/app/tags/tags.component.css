@@ -1,0 +1,20 @@
+div{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+div a{
+    background-color: #30efac;
+    padding: 0.3rem 1rem;
+    margin:0.2rem .15rem;
+    border-radius: 10rem;
+    color: #fc3ec6;
+    font-weight: 600;
+    text-decoration: none;
+    margin-right: 2.5rem;
+    
+}
+div a:hover{
+    opacity: 0.3;
+    color: #fc3ec6;
+}

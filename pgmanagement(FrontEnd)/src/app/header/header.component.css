@@ -1,0 +1,64 @@
+header {
+    background-color: #FDEF80;
+    padding: 10px 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 100px; /* Set your desired width */
+    height: 80px; /* Maintain aspect ratio */
+}
+
+.navigation-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.app-search {
+    margin-left: auto;
+}
+
+
+
+.nav-link {
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+.btn-info {
+    background-color: #ea4a92;
+}
+
+.btn-success {
+    background-color: #3f85f5;
+}
+
+.btn-warning {
+    background-color: #ffc107;
+}
+
+.cart-icon {
+    position: relative;
+}
+
+.cart-icon .badge {
+    position: absolute;
+    top: -8px;
+    right: -8px;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: #fff;
+}

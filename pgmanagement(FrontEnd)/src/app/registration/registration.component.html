@@ -1,0 +1,43 @@
+
+
+<body >
+	<div class="main">  	
+		<input type="checkbox" id="click" aria-hidden="true">
+
+			<div class="signup">
+				<form #signup="ngForm" class="sign" >
+					<label for="chk" aria-hidden="true">Sign up For PGManagement</label>
+					<input type="text" name="username" #username="ngModel" placeholder="User name" required [(ngModel)]="signupObj.userName" [(ngModel)]="user2.userName" ngModel/>
+
+					<span class="username" *ngIf="username.invalid && username.touched" style="color: red;">*username should not be empty</span>
+
+
+
+					<input type="email" name="emailsig" #emailsig="ngModel" placeholder="Email" required [(ngModel)]="signupObj.email" [(ngModel)]="user2.email">
+					<span class="sigEmail" *ngIf="emailsig.invalid && emailsig.touched" style="color: red;">*email is required</span>
+					<input type="password" name="passwordsig" #passwordsig="ngModel" placeholder="Password" required minlength="8" [(ngModel)]="user2.password" [(ngModel)]="signupObj.password"  >
+					<span class="sigpassword" *ngIf="passwordsig.invalid && passwordsig.touched" style="color: red;">*min 8 characters required</span>
+
+
+					<input type="password" name="cpassword" #cpassword="ngModel" placeholder="confirmPassword" minlength="6" required [(ngModel)]="signupObj.confirmpassword" ngModel/>
+					
+					
+                    <span class="cpassword" *ngIf="passwordsig != cpassword && cpassword.touched && cpassword.invalid" style="color: red;">*password doesnt match</span>
+
+					<button type="submit" [disabled]="signup.invalid"  (click)="onSignUp()" routerLink="/home">Sign up</button>
+				</form>
+			</div>
+
+			<div class="login">
+				<form  class="loginpage"  #login="ngForm"  >
+					<label for="chk" aria-hidden="true">Login</label>
+					<input  type="email" name="email" placeholder="Email" required #email="ngModel" [(ngModel)] ="user.email" [(ngModel)]="loginObj.email" ngModel />
+					<span class="logEmail" *ngIf="email.invalid && email.touched" style="color: red;">*Enter a valid email</span>
+					<input  type="password" name="password" #password="ngModel" placeholder="Password" required minlength="8"  [(ngModel)] ="user.password" [(ngModel)]="loginObj.password" ngModel/>
+					<span class="logPass" *ngIf="password.invalid && password.touched" style="color: red;">*invalid passord</span>
+
+					<button type="submit" (click)="onLogin()"  [disabled]="login.invalid"  >Login</button>
+				</form>
+			</div>
+	</div>
+</body>

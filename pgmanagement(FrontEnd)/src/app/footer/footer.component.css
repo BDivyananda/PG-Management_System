@@ -1,0 +1,82 @@
+/* Footer */
+footer {
+    background-color: #f8f9fa;
+}
+
+/* Social media section */
+.footer-social-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.footer-social-section a {
+    margin-right: 1rem;
+    color: #212529;
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.footer-social-section a:hover {
+    color: #007bff;
+}
+
+/* Links section */
+.footer-links-section {
+    padding: 2rem 0;
+}
+
+.footer-links-section h6 {
+    font-size: 1.2rem;
+    color: #212529;
+    font-weight: bold;
+}
+
+.footer-links-section p {
+    margin-bottom: 0.5rem;
+}
+
+.footer-links-section a {
+    color: #6c757d;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-links-section a:hover {
+    color: #007bff;
+}
+
+/* Get in Touch section */
+.footer-contact-section {
+    padding: 2rem 0;
+}
+
+.footer-contact-section h6 {
+    font-size: 1.2rem;
+    color: #212529;
+    font-weight: bold;
+}
+
+.footer-contact-section p {
+    margin-bottom: 0.5rem;
+}
+
+/* Copyright section */
+.footer-copyright-section {
+    background-color: rgba(71, 162, 231, 0.87);
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.footer-copyright-section a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-copyright-section a:hover {
+    text-decoration: underline;
+}

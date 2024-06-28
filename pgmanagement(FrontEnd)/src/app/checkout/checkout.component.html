@@ -1,0 +1,34 @@
+<div class="order-container">
+  <h2>Book your PG</h2>
+  <form [formGroup]="orderForm" (ngSubmit)="proceedToPayment()">
+    <!-- Name field -->
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" formControlName="name">
+      <div class="error-message" *ngIf="orderForm.get('name')?.invalid && orderForm.get('name')?.touched">
+        Name is required.
+      </div>
+    </div>
+
+    <!-- Address field -->
+    <div class="form-group">
+      <label for="address">Address:</label>
+      <textarea id="address" name="address" formControlName="address"></textarea>
+      <div class="error-message" *ngIf="orderForm.get('address')?.invalid && orderForm.get('address')?.touched">
+        Address is required.
+      </div>
+    </div>
+
+    <!-- Phone field -->
+    <div class="form-group">
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" name="phone" formControlName="phone">
+      <div class="error-message" *ngIf="orderForm.get('phone')?.invalid && orderForm.get('phone')?.touched">
+        Phone is required.
+      </div>
+    </div>
+
+
+    <button type="submit">Pay Amount</button>
+  </form>
+</div>

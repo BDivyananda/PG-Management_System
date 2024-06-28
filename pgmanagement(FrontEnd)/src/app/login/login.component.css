@@ -1,0 +1,80 @@
+/* Global Styles */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+  
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+  
+  /* Header Styles */
+  
+header {
+    background-color: #f9f9f9;
+    border-bottom: 1px solid #ccc;
+}
+  
+header h1 {
+    color: #333;
+    margin: 10px 0;
+}
+  
+header p {
+    color: #555;
+}
+  
+  /* About Section Styles */
+  
+.about-section {
+    background-color: #fff;
+    padding: 40px 0;
+}
+  
+.about-content {
+    text-align: center;
+}
+  
+.about-content img {
+    border-radius: 50%;
+    margin-bottom: 20px;
+    border: 2px solid #ccc;
+}
+  
+.about-content h2 {
+    color: #333;
+}
+  
+.about-content p {
+    color: #666;
+    line-height: 1.6;
+}
+  
+.about-content .last {
+    margin-top: 30px;
+}
+  
+  /* Footer Styles */
+  
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+}
+  
+  /* Links Styles */
+  
+a {
+    color: #007bff;
+}
+  
+a:hover {
+    color: #0056b3;
+    cursor: pointer;
+}
+  

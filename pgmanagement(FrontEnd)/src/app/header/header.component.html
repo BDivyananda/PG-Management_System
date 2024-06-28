@@ -1,0 +1,17 @@
+<header>
+    <div class="container">
+        <a href="#" routerLink="/home" class="logo">
+            <h2>Find Your Dream PG</h2>
+        </a>
+        <app-search></app-search>
+        
+        <nav>
+            <ul class="navigation-list">
+                <li><div class="btn btn-info" routerLink="/home">Home</div></li>
+                <li><div class="btn btn-success" routerLink="/login">AboutUs</div></li>
+                <li><div class="btn btn-warning" routerLink="/cartpage"> <i style="font-size: 20px; color: rgb(116, 234, 170);" class="fa fa-cart-plus"></i> <span *ngIf="cartQuantity" class="badge bg-danger">{{cartQuantity}}</span></div></li>
+                <li><button class="btn btn-danger mx-2" routerLink="/registration">Logout</button></li>
+            </ul>
+        </nav>
+    </div>
+</header>
