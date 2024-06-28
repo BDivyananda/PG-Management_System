@@ -18,15 +18,3 @@ The PG Management System is a web application built with Angular and Spring Boot
 - **Backend**: Spring Boot
 - **Database**: MySQL Workbench
 
-## Getting Started
-
-To get a local copy up and running follow these simple steps.
-
-### Prerequisites
-
-- Node.js and npm installed globally.
-- Java Development Kit (JDK) installed.
-- (Specify any additional dependencies or software needed)
-
-
-
